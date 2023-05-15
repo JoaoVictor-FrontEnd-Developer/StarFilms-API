@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #161616;
+    color: white;
+}
+
+.nav{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    border-bottom: 2px solid gray;
+}
+
+.title{
+    display: flex;
+    
+}
+
+.title>i{
+    margin-right: 5px;
+    color: yellow;
+    font-size: 30px;
+}
+
+.busca{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    width: 350px;
+}
+
+.busca>i{
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    transition: 200ms ease-in;
+    font-size: 20px;
+}
+
+.busca>i:hover{
+    background-color: #333333;
+    
+}
+
+#input-busca{
+    width: 100%;
+    margin-left: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+}
+
+.logo{
+    height: 48px;
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Film Container */
+.films-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.films-container .film-card > img{
+    max-width: 100%;
+}
+
+.films-container .film-card{
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.films-container .film-card p {
+    margin-top: 10px;
+    max-width: 200px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    background-color: #333333;
+    padding: 10px;
+}
+
+@media screen and (max-width: 500px){
+    .nav{
+        flex-direction: column;
+    }
+
+    .nav>.title{
+        margin-bottom: 20px;
+    }
+
+    .films-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 40px auto;
+    }
+    
+}
